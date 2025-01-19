@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>IRBIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" type="image/icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+       $(".Text2").hide();
+       $(".Text3").hide();
+            $(".btn2").click(function () {
+                $(".Text1").hide();
+                $(".Text3").hide();
+                $(".Text2").show()
+            });
+          $(".btn1").click(function () {
+                $(".Text3").hide();
+                $(".Text2").hide();
+                $(".Text1").show()
+        });
+        $(".btn3").click(function () {
+                $(".Text1").hide();
+                $(".Text2").hide();
+                $(".Text3").show()
+        });
+     });
+</script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.side {
+  flex: 30%; 
+  background-color: #d3d1d1; 
+  padding: 20px; 
+}
+.main {
+  flex: 70%; 
+  background-color: rgb(202, 202, 202); 
+  padding: 10px; 
+}
+.footer {
+  flex: 100%;
+  padding: 20px;
+  color: white;
+  text-align: left; 
+  background: #3a3939; 
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 15px 10px;
+}
+.header-left {
+  padding-top: 0px;
+  float: left;
+  font-size: x-large;
+}
+.header-right button {
+  background-color: #579dd6; 
+  border: 1px solid rgb(76, 142, 204); 
+  color: white; 
+  padding: 30px 24px; 
+  cursor: pointer; 
+  float: left; 
+}
+.header-right button:not(:last-child) {
+  border-right: none; 
+}
+.header-right:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header-right button:hover {
+  background-color: #0198fd;
+}
+.header-right {
+  padding: 10px;
+  float: right;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ddd;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.card p {
+  padding: 10px;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+.card a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+.card a:hover, a:hover {
+  opacity: 0.7;
+}
+.Text1 {
+  background-color: #ddd;
+  color: black;
+  padding: 15px;
+}
+.Text2 {
+  background-color: #ddd;
+  color: black;
+  padding: 15px;
+}
+.Text3 {
+  background-color: #ddd;
+  color: black;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+      <div class="header-left"><h1>IRBIS</h1></div>
+        <div class="header-right">
+        <button class="btn1">Главная</button>
+        <button class="btn2">Контакты</button>
+        <button class="btn3">О нас</button>
+      </div>                   
+    </div>
+    <div class="row">
+    <div class="side">
+      <div class="card">
+        <img src="Ирбис.jpg" alt="Pict" style="width:100%">
+        <h1>Башкатов Матвей</h1> 
+        <p class="title">Профессиональный юрист</p>
+        <p>Высокая квалификация, многолетний стаж работы, общительность и готовность помочь - качества специалиста.</p>
+        <p><a href="https://mail.ru/">tima0911@bk.ru</a></button></p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="Text1">
+        <h3>Юридическая фирма «ИРБИС»</h3>
+        <p>
+          Наша компания оказывает помощь любым клиентам. Мы всегда открыты для всех, кому требуется помощь профессионального юриста. Вашими вопросами будутзаниматься проффесионалы с большим опыт и богатой практикой в области права. Юридическая компания «ИРБИС» полностью выполняет все взятые обязательства. Вы можете быть уверены - дело будет доведено до конца.
+          Наша основная задача - оказать полезную услугу, сэкономив при этом ваши деньги и время!
+          Мы считаем, что даже сложная работа юриста может быть прозрачна и понятна заказчику.
+          Вы всегда в курсе текущей ситуации, а значит чувствуете себя спокойнее. Ваше дело в надежных руках.
+          </p>
+      </div>
+      <div class="Text2">
+        <h3>Контакты</h3>
+        <p>
+          Телефон:
+          <p>+7 938 531-48-95</p>
+          <p>+7 928 430-77-74</p>
+          <p>Адрес</p>
+          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/10996/kropotkin/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Кропоткин</a><a href="https://yandex.ru/maps/10996/kropotkin/house/ulitsa_morozova_45/YEkYcwNpQU0HQFpvfXhycXVjYA==/?ll=40.550010%2C45.430821&utm_medium=mapframe&utm_source=maps&z=19.57" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Морозова, 45 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=40.550010%2C45.430821&mode=whatshere&whatshere%5Bpoint%5D=40.549835%2C45.430993&whatshere%5Bzoom%5D=17&z=19.57" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+          <p>Эл. Почта:</p>
+          <p>tima0911@bk.ru</p>
+        </p>
+      </div>
+      <div class="Text3">
+        <h3>О нас</h3>
+        <p>Юридическая фирма «ИРБИС» - российская юридическая компания, имеющая юристов, зарекомендовавших себя экспертами в различных отраслях права. 
+           Юридическая фирма «ИРБИС» представляет обширный спектр услуг, в том числе:
+          <p>- Юридические консультации</p>
+          <p>- Представительство в суде</p>
+          <p>- Подготовка исковых заявлений</p>
+          
+          Мы стремимся быть максимально открытыми с доверителями, честно и откровенно говорим о прогнозах развития событий и предлагаем наиболее оптимальные способы решения проблемы. Солидный опыт и высокая квалификация наших юристов позволяют справиться с поставленной задачей с минимальными временными и денежными потерями. Мы гарантируем, что со своей стороны приложим все возможные усилия, чтобы помочь вам.
+        </p>
+    </div>
+    </div>
+    <div class="footer">
+      <p>Телефон:</p>
+          <p>+7 938 531-48-95</p>
+          <p>+7 928 430-77-74</p>
+          <p>Адрес:</p>
+          <p>Краснодарский край, Кропоткин, ул. Морозова, 45</p>
+    </div>
+</body>
+</html>
